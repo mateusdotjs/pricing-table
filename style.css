@@ -1,0 +1,240 @@
+:root {
+    --yellow: #ffcc29;
+    --blue: #1d539e;
+    --gray: #828799;
+    --page-background: #F9FBFC;
+    --price-container: #ffffff;
+    --price: #1E2338;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+body {
+    background-image: linear-gradient(to bottom, var(--blue) 50%, var(--page-background) 50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+.title-control {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.title {
+    color: var(--page-background);
+    font-size: 5.0rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: var(--page-background);
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.8px;
+}
+
+.plans-control {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-right: 100px;
+    padding-left: 100px ;
+}
+
+.side {
+    width: 26vw;
+    height: 71.5vh;
+    background-color: var(--price-container);
+    box-shadow: 0px 0px 1px var(--gray);
+    border-radius: 9px;
+}
+
+.side-top {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 0px;
+}
+
+.side-top > span {
+    font-size: 2.0rem;
+    font-weight: 600;
+    color: var(--price);    
+}
+
+.center {
+    width: 26vw;
+    height: 75vh;
+    background-color: var(--price-container);
+    box-shadow: 0px 0px 1px var(--gray);
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.top {
+    width: 100%;
+    height: 15.5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--yellow);
+    box-shadow: 0px 0px 1px var(--gray);
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 10px;
+}
+
+.top > span {
+    font-size: 2.0rem;
+    font-weight: 600;
+    color: var(--blue);
+}
+
+.top > div {
+    background-color: var(--blue);
+    width: 32%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    font-size: 1.3rem;
+    color: var(--price-container);
+}
+
+.mid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px ;
+}
+
+.price-control {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    box-shadow: 0px 15px 1px -15px var(--gray);
+    margin-bottom: 1px;
+}
+
+
+#big {
+    font-size: 3.6rem;
+    font-weight: 800;
+    color: var(--price);
+}
+
+#small {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--price);
+
+}
+
+#gray {
+    font-size: 1.9rem;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.price-control > p {
+    font-size: 1.4rem;
+    color: var(--gray);
+    margin-top: 10px;
+}
+
+.low {
+    width: 100%;
+    height: 36%;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 40px ;
+    margin-top: 21px;
+}
+
+
+.low-side > p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--gray);
+    display: flex;
+}
+
+.low-side > p::before {
+    content: url(/assets/check.svg);
+    margin-right: 13px;
+}
+
+.low-side {
+    width: 100%;
+    height: 40%;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 40px ;
+    margin-top: 21px;
+}
+
+.low > p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--gray);
+    display: flex;
+}
+
+.low > p::before {
+    content: url(/assets/check.svg);
+    margin-right: 13px;
+}
+
+.button-control {
+    width: 100%;
+    height: 10%;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.button-control > button {
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    border-radius: 10px;
+}
+
+.side-b {
+    background-color: var(--price-container);
+    border: 1px solid var(--blue);
+    color: var(--blue);
+}
+
+.center-b {
+    background-color: var(--blue);
+    color: var(--price-container);
+    border: none;
+}
+
+footer {
+    height: 15vh;
+}
